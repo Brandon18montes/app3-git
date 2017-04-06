@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera aplicacion</title>
+
+<!--grupo CSS-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="css/tema-app3.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/muestra2.jpg','imagenes/definicion2.jpg','imagenes/calentamiento2.jpg')">
+
+    <div data-role="page" id="Principal" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="c">
+      <h1> Brandon Montes Ramirez 4 F</h1>
+     </div>
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Foto de la CONTAMINACIÓN</h1>
+        <div>
+         <p> Estos son unos ejemplos de Contaminación: </p>
+         <br>
+        </div>
+        <div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/muestra2.jpg',1)"><img src="imagenes/muestra1.jpg" width="960" height="540" id="Image5"></a> 
+        </div>
+       </div>
+      </div>
+      <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-c">
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2> Definición</h2>
+         <p>Se muestra la definición de la contaminación</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2> Tipos de Contaminación</h2>
+         <p>Se muestran los diversos tipos de Contaminación</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Consecuencias de la contaminación</h2>
+         <p> Se muestra las consecuencias</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2> Las RRR</h2>
+         <p>Se muestran los significados de las RRR</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Medidas Correctivas</h2>
+         <p> Muestra las medidas para corregir la contaminación</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Contaminación en mi entorno</h2>
+         <p> Muestra la contaminación que existe en mi entorno y algunas medidas para solucionar el problema</p>
+        </a>
+       </li>
+       </ul>
+      </div>
+      <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+       <div>
+        <img src="imagenes/logo.png" width="46" height="46">
+       </div>
+       <div>
+        <h4> Aplicacion Tres</h4>
+        <h4> Brandon Montes Ramirez</h4>
+       </div>
+      </div>
+     </div>
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+       <h2>DEFINICIÓN</h2>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        <h2> La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).La contaminación ambiental es también la incorporación a los cuerpos receptores de sustancias sólidas, liquidas o gaseosas, o mezclas de ellas, siempre que alteren desfavorablemente las condiciones naturales del mismo, o que puedan afectar la salud, la higiene o el bienestar del público.</h2>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Imagenes de acuerdo a la definición: </h1>
+        <div>
+         <br>
+        </div>
+        <div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/definicion2.jpg',1)"><img src="imagenes/definicion1.jpg" alt="Esto es la contaminacion" width="474" height="355" id="Image6"></a></div>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+       <h4>APLICACION Tres, BMR</h4>
+      </div>
+     </div>
+     
+     <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+       <h2>TIPOS DE CONTAMINACIÓN</h2>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        <h2> Estos son los Tipos de Contaminación: </h2>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Contaminación del Agua</h1>
+        <div>
+         <p>Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.
+ Contaminación del Agua </p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/agua.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Contaminación del Aire</h1>
+        <div>
+         <p>El monóxido de carbono y óxido de azufre se consideran contaminantes primarios. Estos contaminantes sufren cambios químicos y causan efectos secundarios tales como smog. La contaminación del aire se define por la existencia y la integración de los compuestos tóxicos en el ambiente en concentraciones lo suficientemente altas como para causar daño a los seres humanos, los animales y el medio ambiente de la Tierra. </p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/aire.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Contaminación del Suelo</h1>
+        <div>
+         <p> La contaminación del suelo se refiere a la contaminación del suelo por medio de exceso de fertilizantes, productos químicos, insecticidas, herbicidas, pesticidas, etc provocan contaminación del suelo en la disminución de la calidad del suelo y es causada por la erosión del suelo.</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/suelo.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Contaminación Térmica</h1>
+        <div>
+         <p> La contaminación térmica se refiere a la adición de grandes cantidades de calor residual para el medio ambiente, las causas de la contaminación térmica son casi las mismas que las que causa la contaminación del aire.</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/termica.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> La Contaminación radiactiva</h1>
+        <div>
+         <p>  Los residuos radiactivos son peligrosos para la salud humana y el medio ambiente, y está regulado por las agencias gubernamentales con el fin de proteger la salud humana y el medio ambiente.</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/radiactiva.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Contaminación Acústica </h1>
+        <div>
+         <p>  La contaminación acústica se convierte en una tensión total a tantos animales que también crean muchos problemas en la relación presa / depredador y detección. También conduce a varios problemas de reproducción diferentes. </p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/acustica.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Contaminación Lumínica </h1>
+        <div>
+         <p> La Asociación Internacional Cielo Oscuro define la contaminación lumínica a los efectos nocivos de la luz artificial en la atmósfera de la Tierra y el medio ambiente.</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/luminica.png" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+       <h4>APLICACION Tres, BMR</h4>
+      </div>
+     </div>
+     
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+       <h2>Concecuencias de la Contaminación</h2>
+      </div>
+      <div data-role="content" align="listview">
+       <div>
+        <h2> *Problemas para la salud: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.</h2>
+        <h2> *Debilitamiento de la capa de ozono: la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta.</h2>
+        <h2> *La contaminación afecta al suelo y al agua: la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción.</h2>
+        <h2>*La contaminación afecta al clima: seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. </h2>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Calentamiento Global</h1>
+        <div>
+         <p>Los glaciares se están derritiendo, el nivel del mar aumenta, las selvas se están secando y la fauna y la flora lucha para seguir este ritmo. Cada vez es más evidente que los humanos han causado la mayor parte del calentamiento del siglo pasado, mediante la emisión de gases que retienen el calor, para potenciar nuestra vida moderna. Llamamos gases de invernadero y sus niveles son cada vez más altos, ahora y en los últimos 65.000 años.
+         Efecto invernadero
+
+El “efecto invernadero” es el calentamiento que se produce cuando ciertos gases de la atmósfera de la Tierra retienen el calor. Estos gases dejan pasar la luz pero mantienen el calor como las paredes de cristal de un invernadero.
+ </p>
+         <br>
+        </div>
+        <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/calentamiento2.jpg',1)"><img src="imagenes/calentamiento1.jpg" width="600" height="450" id="Image14"></a> </div>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+       <h4>APLICACION Tres, BMR</h4>
+      </div>
+     </div>
+     
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+       <h2>Las RRR</h2>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+        <h2> Regla de las "RRR" </h2>
+        <p> La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R o También las tres erres, es una propuesta sobre hábitos de consumo, popularizada por la organización ecologista Greenpeace, que pretende desarrollar hábitos como el consumo responsable. Este concepto hace referencia a estrategias para el manejo de residuos que buscan ser más sustentables con el medio ambiente y específicamente dar prioridad a la reducción en el volumen de residuos generados. Durante la Cumbre del G8 en junio de 2004, el primer ministro de Japón, Koizumi Junichiro, presentó la Iniciativa de las tres erres que busca construir una sociedad orientada hacia el reciclaje.1 En abril de 2005 se llevó a cabo una asamblea de ministros en la que se discutió con Estados Unidos, Alemania, Francia y otros 20 países la manera en que se puede implementar de manera internacional acciones relacionadas a las tres erres.</p>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Reducir </h1>
+        <div>
+         <p> Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. Actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería:
+Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).
+Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga).
+Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.
+</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/reducir.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Reutilizar </h1>
+        <div>
+         <p> Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.
+
+Ejemplos: Utilizar la otra cara de las hojas impresas, rellenar botellas,etc.
+
+Las botellas desechables se pueden convertir en ladrillos ecológicos, si en su interior se les ponen todas las bolsas de plástico que ya no se usan. Las cajitas o frascos de PVC, metal o plástico se pueden pintar o decorar con técnicas de decoupage y utilizarse nuevamente ahora para guardar distintos elementos. El papel usado se puede transformar en pulpa y crear nuevas hojas para escribir.
+</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/reutiliza.png" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Reciclar </h1>
+        <div>
+         <p>Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y briks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.
+Ejemplo: El vidrio y la mayoría de plásticos se pueden reciclar calentándolos hasta que se funden y dándoles una nueva forma. Es como utilizar algo de su principio, aunque la eficiencia no es del cien por cien en general. En el caso del vidrio en concreto, sí es completamente reciclable: de una botella se podría obtener otra botella.</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/reciclar.jpg" width="50%" height="50%">
+        </div>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+       <h4>APLICACION Tres, BMR</h4>
+      </div>
+     </div>
+     
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+       <h2>MEDIDAS CORRECTIVAS</h2>
+      </div>
+      <div data-role="content" align="list">
+       <div>
+        <h2>1.- Evitar la erosión ocasionada por el agua, el aire o el mismo hombre.</h2>
+
+<h2>2.- Evitar la práctica del monocultivo, que consiste en sembrar siempre en el mismo suelo, el mismo vegetal.</h2>
+
+<h2>3.- Evitar el sobre pastoreo, es conveniente llevar los animales de un lugar a otro, con la finalidad que el pasto vuelva a crecer.</h2>
+
+<h2>4.- Construir terrazas y sembrar en contorno, cuando se siembra sobre terrenos inclinados.</h2>
+
+<h2>5.- Sembrar árboles que sirvan de rompevientos para que disminuyan el impulso del viento y no destruya los sembradíos.</h2>
+
+<h2>6.- Evitar la tala y la quema descontrolada por sus efectos para la erosión y la eliminación de microorganismos.</h2>
+
+<h2>7.- Enriquecer el suelo añadiendo abonos que sustituyan los elementos nutritivos que han tomado los vegetales.</h2>
+        
+       </div>
+      </div>
+        <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Organismo de Evaluación y Fiscalización Ambiental (OEFA)</h1>
+        <div>
+         <p> Organismo de Evaluación y Fiscalización Ambiental (OEFA) es un organismo público, técnico especializado, adscrito al Ministerio del Ambiente de Perú encargado de la fiscalización ambiental en todo el territorio peruano.</p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/hipervinculo.png" width="50%" height="50%">
+        </div>
+        <a href="https://www.oefa.gob.pe/" target="_self"> Ir a la pagina de (OEFA) </a> 
+       </div>
+      </div>
+      <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Programa de Naciones Unidas para el Medio Ambiente, PNUMA</h1>
+        <div>
+         <p>Programa de Naciones Unidas para el Medio Ambiente, PNUMA, (UNEP por sus siglas en inglés) con sede en Nairobi, Kenia, es un programa de las Naciones Unidas que coordina las actividades relacionadas con el medio ambiente, asistiendo a los países en la implementación de políticas medioambientales adecuadas así como a fomentar el desarrollo sostenible. </p>
+         <br>
+        </div>
+        <div>
+         <img src="imagenes/hipervinculo1.png" width="50%" height="50%">
+        </div>
+        <a href="http://web.unep.org/" target="_self"> Ir a la pagina de (OEFA) </a> 
+       </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+       <h4>APLICACION Tres, BMR</h4>
+      </div>
+     </div> 
+     
+     
+     <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+       <h2>CONTAMINACIÓN EN MI ENTORNO</h2>
+      </div>
+      <div data-role="content" align="center">
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/entorno1.jpg" alt="entorno1" title="entorno1" id="wows1_0"/></li>
+		<li><img src="data1/images/entorno2.jpg" alt="entorno2" title="entorno2" id="wows1_1"/></li>
+		<li><img src="data1/images/entorno3.jpg" alt="entorno3" title="entorno3" id="wows1_2"/></li>
+		<li><img src="data1/images/entorno4.jpg" alt="entorno4" title="entorno4" id="wows1_3"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/entorno5.jpg" alt="wowslideshow" title="entorno5" id="wows1_4"/></a></li>
+		<li><img src="data1/images/entorno6.jpg" alt="entorno6" title="entorno6" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="entorno1"><span><img src="data1/tooltips/entorno1.jpg" alt="entorno1"/>1</span></a>
+		<a href="#" title="entorno2"><span><img src="data1/tooltips/entorno2.jpg" alt="entorno2"/>2</span></a>
+		<a href="#" title="entorno3"><span><img src="data1/tooltips/entorno3.jpg" alt="entorno3"/>3</span></a>
+		<a href="#" title="entorno4"><span><img src="data1/tooltips/entorno4.jpg" alt="entorno4"/>4</span></a>
+		<a href="#" title="entorno5"><span><img src="data1/tooltips/entorno5.jpg" alt="entorno5"/>5</span></a>
+		<a href="#" title="entorno6"><span><img src="data1/tooltips/entorno6.jpg" alt="entorno6"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       <div>
+        <h2> Mis propuestas para correjir los malos habitos:</h2>
+        <h3>1.- Poner botes de basura en lugares publicos.</h3>
+        <h3>2.- Que vigile alguien en los lugares donde hay mas basura y estan los perros.</h3>
+        <h3>3.- Que el camion recoja bien la basura y no la deje toda tirada. </h3>
+        <h3>4.- Las personas que se organicen para tener un lugar adecuado para tirar basura.</h3>
+        <h3>5.- Que el municipio tenga mas servicio para recoger la basura.</h3>
+        <h3>6.- Los que recogen la basura que la junten bien por que huele mal.</h3>
+        <h3>7.- Que esten atentos al camion que pasa por que luego la dejan tirada en donde sea.</h3>
+        <h3>8.- Ser responsables al sacar la basura y ponerla en su lugar correcto.</h3>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+       <h4>APLICACION Tres, BMR</h4>
+      </div>
+     </div>
+      
+  
+ 
+  
+
+</body>
+</html>
